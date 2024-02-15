@@ -1,0 +1,39 @@
+*{
+  width: 100%;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+  /* height: 100; */
+}
+.card{
+  width: 600px;
+  background-color: white;
+  height: fit-content;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid;
+}
+
+.card h2, .card h4{
+  /* overflow:hidden; */
+  /* text-overflow: ellipsis;  */
+  /* white-space: nowrap; */
+  word-wrap: break-word;
+}
+.Upper-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Upper-container div{
+  flex-grow: 0;
+  flex-basis: 50%;
+}
+
+@media (max-width: 600px){
+  .Upper-container div{
+    flex-basis: 100%
+  }
+}
